@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
 <title>Ôn Thi Điều Dưỡng</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,14 +71,18 @@
     color-scheme: dark;
   }
 
-  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   body{
+    margin:0;
     background:var(--bg);
     color:var(--ink);
     font-family:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
     padding-inline:16px;
     padding-block:0;
+    padding-bottom:env(safe-area-inset-bottom,0px);
     -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
   }
   h1,h2,h3,.display{font-family:"Fraunces", Georgia, serif;}
   .mono{font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-variant-numeric: tabular-nums;}
@@ -233,6 +242,8 @@
     background:var(--surface-2);border-radius:14px;padding:16px;font-size:13px;color:var(--ink-faint);text-align:center;
   }
 </style>
+</head>
+<body>
 
 <div id="app">
 
@@ -647,3 +658,5 @@
   }
 })();
 </script>
+</body>
+</html>
